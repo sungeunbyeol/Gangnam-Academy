@@ -5,12 +5,11 @@ public class Car {
     int number; // 객체변수
     
     public Car(){
-        this.name = "이름없음";
-        this.number = 0;
+        this("이름없음",0);
     } 
 
     public Car(String name){
-        this.name = name;
+        this(name, 0);
     }
 
     public Car(String name, int number){
