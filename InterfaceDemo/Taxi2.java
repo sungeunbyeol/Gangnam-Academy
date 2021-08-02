@@ -1,13 +1,9 @@
-public class Taxi implements Meter {
-    
-    @Override
+public class Taxi2 implements Meter2{
     public void start(){
         System.out.println("운행을 시작합니다.");
     }
-
-    @Override
-    public int stop(int distance){
-        public final int BASE_FARE = 3000;
+    public int BASE_FARE=3000;
+    public int stop(int distance) {
         int fare = BASE_FARE + distance *2;
         System.out.println("운행을 종료합니다. 요금은 " + fare + "원입니다.");
         return fare;
