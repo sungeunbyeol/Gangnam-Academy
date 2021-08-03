@@ -1,18 +1,23 @@
 public class FindKim {
     public String findKim(String[] seoul){
+        int x = 0;
 
-
-
-        String x;
-
-
-        for(String se : seoul){
-            if(se.equals("Kim")){
-                x = se;
+        for(int i = 0; i < seoul.length; i++) {
+            if(seoul[i].equals("Kim")) {
+                x = i;
             }
         }
 
         return "김 서방은 " + x + " 에 있다";
+
+        // for(String se : seoul){
+        //     int e = 0;
+        //     if(se.equals("Kim")){
+        //         x = e;
+        //     } else {
+
+        //     }
+        // }
     }
 
 
