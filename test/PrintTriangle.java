@@ -14,7 +14,7 @@ public class PrintTriangle {
 
         // 역삼각형 만들기
         for(int i = 0; i <= num; i++){
-            for(int j = num ; j >= i; j--){
+            for(int j = num ; j > i; j--){
                 System.out.print("*");
             }
             System.out.println();
