@@ -52,16 +52,16 @@ public class ExceptionExam3 {
 }
 ```
 
-# 애너테이션  
+## 애너테이션  
 > 컴퓨터도 읽을 수 있는 주석이라고 생각하면 쉽다.
 > - 표준 애너테이션
 > - 메타 애너테이션
 > - 마커 애너테이션
 
 
-## 표준 애너테이션
-### @Override
-> 컴파일러에게 오버라이딩하는 메서드라는 것을 알린다.
+### 표준 애너테이션
+> @Override
+> - 컴파일러에게 오버라이딩하는 메서드라는 것을 알린다.
 ```
 class Parent {
   void parentMethod(){}
@@ -75,7 +75,7 @@ class Child extends Parent{
 이때 자식 메소드 위에 @Override를 사용하면 오버라이딩 될 것이 없으면 오류 메세지를 발생한다.
 ```
 
-# thymeleaf 
+## thymeleaf 
 
 > 사용법:
 > 
