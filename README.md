@@ -77,9 +77,10 @@ class Child extends Parent{
 
 # thymeleaf 
 
-사용법:
-java.class로 Controller 할 수 있는 파일을 만든 후, resources->templates->board->register.html 을 만든다.
-- 하나를 불러오고 사용할 때 사용하는 방법이다.
+> 사용법:
+> 
+> java.class로 Controller 할 수 있는 파일을 만든 후, resources->templates->board->register.html 을 만든다.
+> - 하나를 불러오고 사용할 때 사용하는 방법이다.
 ```
 사용예시:
 @RequestMapping("/board")
@@ -93,8 +94,8 @@ public class BoardController {
 	}
 ```
 
-java.class로 Controller 할 수 있는 파일을 만든 후, resources->templates->home0202.html 을 만든다.
-- 두개 이상을 불러오고 사용하는 방법이다.
+> java.class로 Controller 할 수 있는 파일을 만든 후, resources->templates->home0202.html 을 만든다.
+> - 두개 이상을 불러오고 사용하는 방법이다.
 ```
 사용예시:
 // HomeController.class 에서
@@ -143,21 +144,23 @@ public class HomeController {
   </table>
 ```
 
-<!-- 타임리프 사용 선언을 했기 때문에 html 파일에서 !DOCTYPE html 필요없음-->
-<html xmlns:th="http://www.thymeleaf.org">
+> <!-- 타임리프 사용 선언을 했기 때문에 html 파일에서 !DOCTYPE html 필요없음-->
+> 
+> <html xmlns:th="http://www.thymeleaf.org">
 
 
-<!-- 타임리프 마크업에는 th속성으로 시작한다. -->
+> <!-- 타임리프 마크업에는 th속성으로 시작한다. -->
+```
 <!-- th:text, th:utext 속성을 사용해서 스프링 MVC에 저장된 값 또는 프로퍼티 파일에서 가져온 메세지를 표시 -->
-<h1 th:utext="${msg}">greeting</h1> // {msg}에서 <b>태그와 같은 속성을 사용할 때 utext를 사용함
-<h1 th:text="${msg}">greeting</h1> // {msg}에서 <b>태그와 같은 속성이 없을 때는 그냥 text를 사용함
+> <h1 th:utext="${msg}">greeting</h1> // {msg}에서 <b>태그와 같은 속성을 사용할 때 utext를 사용함
+> <h1 th:text="${msg}">greeting</h1> // {msg}에서 <b>태그와 같은 속성이 없을 때는 그냥 text를 사용함
 
-
-<!-- th:action="@{}"는 주소를 의미함. 그래서 board가 있는 controller로 들어가서 modify를 찾음. -->
-   <form th:action="@{/board/modify}" method="post">
-      <input type="submit" value="modify(POST)">
-   </form>
-
+	
+<!-- th:action="@{}"는 주소를 의미함. 그래서 board가 있는 controller로 들어가서 modify를 찾음. -->	
+<form th:action="@{/board/modify}" method="post">
+   <input type="submit" value="modify(POST)">
+</form>
+```
 
 
 
